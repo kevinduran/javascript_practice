@@ -1,4 +1,4 @@
-let toast  = document.querySelector('.toast');
+let toast  = document.querySelector('.toast_button');
 
 toast.addEventListener('click', () => {
     let toast_note = document.createElement('div');

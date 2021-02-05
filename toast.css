@@ -6,7 +6,7 @@ body{
     height: 100vh;
 }
 
-.toast{
+.toast_button{
     padding: 5px 25px;
     letter-spacing: 5px;
     font-size: 1.1em;
@@ -19,6 +19,7 @@ body{
     border: 1px solid red;
     padding: 10px 50px;
     background-color: rgb(255, 208, 208);
+    text-align: center;
 }
 
 .container{

@@ -4,6 +4,47 @@ body {
     position: relative;
 }
 
+.title{
+    color: green;
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    top: 13%;
+}
+
+.input{
+position: relative;
+text-align: center;
+top: 25%;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 15px 45px;
+    background-color: transparent;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+    color: green;
+    font-size: 1.1em;
+}
+
+button{
+    padding: 15px 45px;
+    background-color: rgb(177, 10, 10);
+    outline: none;
+    border: 1px solid transparent;
+    letter-spacing: 4px;
+    font-size: 1.1em;
+    margin-left:15px;
+    color: rgb(223, 191, 191);
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.5s ease all;
+    border: 1px solid white;
+    background-color: rgb(82, 5, 5);
+}
+
 .output{
     color: green;
     font-size: 3em;

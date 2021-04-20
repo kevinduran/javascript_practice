@@ -15,9 +15,10 @@ function autoType() {
         return;
     }
    
-}
+};
+ 
 
 
 
 
-
+l

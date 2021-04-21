@@ -7,8 +7,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(24, 23, 23);
 }
 
 input{
@@ -16,6 +17,7 @@ input{
     font-size: 1.3em;
     border: none;
     cursor: text;
+    width: 170px;
 }
 input:focus{
     outline: none;
@@ -36,4 +38,17 @@ button:focus{
 }
 button:hover{
     background-color: rgb(184, 9, 9);
+}
+
+
+.output{
+    position: relative;
+    bottom: 25%;
+    color: white;
+    width: 100vw;
+    height: 40vh;
+}
+
+.death{
+    font-size: 2em;
 }

@@ -1,3 +1,8 @@
+*{
+    transition: 0.5s ease all;
+}
+
+
 body{
     background-color: rgb(19, 17, 17);
 }
@@ -20,6 +25,20 @@ body{
     border-bottom: 1px solid rgb(248, 218, 218);
     margin: 15px 0; 
     width: 30px;   
+}
+
+.navRotateOne {
+    transform: rotate(45deg);
+    position: relative;
+    top: 15px;
+}
+.navRotateMiddle{
+    display: none;
+}
+.navRotateTwo {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 2px;
 }
 .nav{
     width: 100%;

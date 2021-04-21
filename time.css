@@ -1,5 +1,5 @@
 *{
-    transition: 0.5s ease all;
+    transition: 1.2s ease all;
 }
 
 body{
@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     height: 100vh;
     background-color: rgb(24, 23, 23);
+   
 }
 
 input{
@@ -43,12 +44,21 @@ button:hover{
 
 .output{
     position: relative;
-    bottom: 25%;
+    bottom: 15%;
     color: white;
     width: 100vw;
     height: 40vh;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    opacity: 0;
 }
 
 .death{
     font-size: 2em;
+    padding: 15px 0;
+    transition: 2s ease all;
+}
+.controller{
+    position: relative;
+    bottom: 18%;
 }

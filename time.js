@@ -10,7 +10,7 @@ time.addEventListener('click', () => {
 });
 
 function deathClock() {
-    var result = (averageLifespan - (age.value*365)).toString();
+    var result = (averageLifespan - (age.value*365)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");//the replace was from stack overflow
     days.innerText = result;
     output.style.opacity = '1';
 }
@@ -18,6 +18,6 @@ function deathClock() {
 
 age.addEventListener('click', () => {
   age.value = '';
-  output.style.opacity = '0';
+  output.style.opacity = '0'
 })
 

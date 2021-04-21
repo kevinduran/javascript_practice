@@ -4,10 +4,10 @@ let lineRotateOne = document.querySelector('.lineOne');
 let lineRotateTwo = document.querySelector('.lineThree');
 let lineRotateMiddle = document.querySelector('.lineTwo');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', function() {
     nav.classList.toggle('visible');
-    lineRotateOne.classList.add('navRotateOne')
-    lineRotateTwo.classList.add('navRotateTwo')
-    lineRotateMiddle.classList.add('navRotateMiddle');
+    lineRotateOne.classList.toggle('navRotateOne')
+    lineRotateTwo.classList.toggle('navRotateTwo')
+    lineRotateMiddle.classList.toggle('navRotateMiddle');
 })
 

@@ -30,15 +30,15 @@ body{
 .navRotateOne {
     transform: rotate(45deg);
     position: relative;
-    top: 15px;
+    top: 17px;
 }
 .navRotateMiddle{
-    display: none;
+    width: 0;
 }
 .navRotateTwo {
     transform: rotate(-45deg);
     position: relative;
-    bottom: 2px;
+    bottom: 16px;
 }
 .nav{
     width: 100%;

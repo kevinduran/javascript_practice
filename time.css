@@ -1,0 +1,39 @@
+*{
+    transition: 0.5s ease all;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(12, 11, 11);
+}
+
+input{
+    height: 45px;
+    font-size: 1.3em;
+    border: none;
+    cursor: text;
+}
+input:focus{
+    outline: none;
+}
+button{
+    height: 48px;
+    width: fit-content;
+    padding: 0 15px;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgb(131, 10, 10);
+    border: none;
+    cursor: pointer;
+}
+button:focus{
+    outline:none;
+}
+button:hover{
+    background-color: rgb(184, 9, 9);
+}

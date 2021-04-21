@@ -2,7 +2,11 @@
 *{
     transition: all 1s ease;
 }
+body{
+  background-color: #ccc;
 
+
+}
 .container{
     border: 5px solid rgb(231, 43, 43);
     width: 300px;

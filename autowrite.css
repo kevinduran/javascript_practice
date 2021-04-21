@@ -1,3 +1,7 @@
+*{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 body {
     background-color:#100c08 ;
     height: 100vh;
@@ -7,15 +11,15 @@ body {
 .title{
     color: green;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.2em;
     position: relative;
     top: 13%;
 }
 
 .input{
-position: relative;
-text-align: center;
-top: 25%;
+    position: relative;
+    text-align: center;
+    top: 25%;
 }
 input{
     outline: none;

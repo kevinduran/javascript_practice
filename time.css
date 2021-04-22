@@ -52,6 +52,15 @@ button:hover{
     font-family: 'Special Elite', cursive;
     opacity: 0;
 }
+.wisdom{
+    position: relative;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    opacity: 0;
+    transition-delay: 1.5s;
+}
 
 .death{
     font-size: 2em;

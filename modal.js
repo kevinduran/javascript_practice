@@ -27,7 +27,5 @@ function getMovie(){
 
 
 //todo:
-    //need to solve random page number query issue
-    //NEED TO FIND OUT HOW TO ACCESS PAGE NUMBER IN REQUEST
     //need to display to dom
     //need to display image as well

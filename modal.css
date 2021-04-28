@@ -26,6 +26,7 @@ body{
     top: 20%;
     height: 30em;
     position: relative;
+    overflow: hidden;
 }
 
 .active{
@@ -45,8 +46,7 @@ body{
     box-shadow: 3px 3px 4px;
     font-size: 1.5em;
     text-align: center;
-
-}.
+}
 
 .modalBtn:hover{
     background-color: rgb(206, 13, 13);
@@ -99,3 +99,37 @@ body{
     font-size: 1.3em;
     color: rgb(223, 221, 221);
 }
+
+.output{
+    display: flex;
+}
+
+.outputTop{
+    width: 50%;
+    overflow: hidden;
+}
+.outputBottom{
+    width: 50%;
+}
+
+.outputTitle{
+    position: relative;
+    margin: 0 25px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.1em;
+    color: rgb(223, 221, 221);
+}
+.outputDesc{
+    position: relative;
+    margin: 0 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    overflow: hidden;
+    color: rgb(223, 221, 221);
+}
+
+.myImage{
+    width: 180px;
+    height: 330px;
+}
+

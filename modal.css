@@ -1,24 +1,27 @@
+*{
+    transition:0.5s ease all;
+}
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(209, 196, 196);
+    background-color: rgb(26, 22, 22);
     height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 .modal{
     position: fixed;
     top: 0;
     left: 0;
-    background-color:  rgb(129, 120, 120);
+    background-color: rgb(23 1 1 / 80%);
     height: 100%;
     width: 100%;
     display: none;
 }
 .box{
-    background-color: rgb(128, 0, 0);
-    border: 5px solid rgb(209, 196, 196);
-    width: 500px;
+    background-color: rgb(95, 3, 3);
+    width: 420px;
     margin: 0 auto;
     top: 20%;
     height: 30em;
@@ -32,8 +35,67 @@ body{
 .modalBtn{
     position: relative;
     margin: 0 auto;
-    width: 200px;
-    height: 25px;
-    top: 40%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(145, 14, 14);
+    border: 1px solid rgb(41, 41, 41);
+    top: 20%;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px;
+    font-size: 1.5em;
+    text-align: center;
+
+}.
+
+.modalBtn:hover{
+    background-color: rgb(206, 13, 13);
+    box-shadow: none;
 }
 
+.modalBtn:focus{
+    outline: none;
+}
+
+.close{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.9em;
+    color: rgb(223, 221, 221);
+}
+
+.close:focus{
+    outline: none;
+}
+
+.topTitle{
+    position: relative;
+    top: 8%;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 2em;
+    color: rgb(223, 221, 221);
+}
+.bottomTitle{
+    font-size: 2em;
+    top: 5%;
+    position: relative;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(223, 221, 221);
+
+}
+.modalTitle{
+    position: relative;
+    top: 1%;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.3em;
+    color: rgb(223, 221, 221);
+}

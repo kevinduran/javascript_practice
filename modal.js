@@ -18,8 +18,6 @@ close.addEventListener('click', ()=>{
 function getMovie(){
     let randomMovie = Math.floor(Math.random() * 20 );
     let randomPage = Math.floor(Math.random()* 100);
-    console.log('random number : ' + randomMovie)
-    console.log('random page : ' + randomPage)
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&with_genres=27&page=${randomPage}&language=en-US`)
         .then(res => res.json())
         .then(data =>{
@@ -29,8 +27,3 @@ function getMovie(){
         })
 }
 
-
-
-//todo:
-    //need to display to dom
-    //need to display image as well

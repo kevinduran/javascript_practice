@@ -1,32 +1,67 @@
 body{
     background-color: rgb(24, 22, 22);
 }
-
+img{
+    height: 100%;
+    width: 100%;
+}
 .container{
     margin: 0 auto;
     height: 600px;
-    width: 400px;
-    top: 3em;
+    width: 500px;
+    top: 8em;
     position: relative;
     display: flex;
     align-items: center;
 }
 .carousel_container{
     position: relative;
-    width: 350px;
     margin: 0 auto;
-    height: 470px;
+    height: 485px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.left{
-    height: 20px;
+.button{
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border: 1px solid red;
+    height: 90px;
+    padding-top: 20px;
+    margin: 0 10px;
 }
-.right{
-    height: 20px;
-    cursor: pointer;
+
+.lineLeft{
+    background-color: rgb(163, 11, 11);
+    transform: rotate(-45deg);
+    height: 4px;
+    width: 35px;
+    position: relative;
+    bottom: 19px;
+    
 }
-img{
-    height: 470px;
+.lineLeftTwo{
+    background-color: rgb(163, 11, 11);
+    transform: rotate(45deg);
+    height: 4px;
+    width: 35px;
+    top: 7px;
+
+}
+.lineRight{
+    background-color: rgb(163, 11, 11);
+    transform: rotate(45deg);
+    height: 4px;
+    width: 35px;
+    position: relative;
+    bottom: 19px;
+    
+}
+.lineRightTwo{
+    background-color: rgb(163, 11, 11);
+    transform: rotate(-45deg);
+    height: 4px;
+    width: 35px;
+    top: 7px;
+
 }

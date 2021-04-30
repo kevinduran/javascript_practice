@@ -2,10 +2,9 @@ body{
     background-color: rgb(24, 22, 22);
 }
 img{
-    height: 101%;
     width: 100%;
 }
-.container{
+.main__container{
     margin: 0 auto;
     height: 600px;
     width: 500px;
@@ -14,26 +13,36 @@ img{
     display: flex;
     align-items: center;
 }
-.carousel_container{
+.carousel__container{
     position: relative;
     margin: 0 auto;
     height: 485px;
-    width: fit-content;
-    display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
+.photo__container,
+.photo__container--hidden{
+    display: none;
+}
+.photo__container--visible{
+    display: block;
+}
+
+
 
 .button{
     cursor: pointer;
     background-color: transparent;
     border: none;
+    border: 1px solid red;
     height: 90px;
     padding-top: 20px;
     margin: 0 10px;
-    z-index: 100;
+    z-index: 2;
+    
 }
 
-.lineLeft{
+.button__prev--line--one{
     background-color: rgb(163, 11, 11);
     transform: rotate(-45deg);
     height: 4px;
@@ -42,7 +51,7 @@ img{
     bottom: 19px;
     
 }
-.lineLeftTwo{
+.button__prev--line--two{
     background-color: rgb(163, 11, 11);
     transform: rotate(45deg);
     height: 4px;
@@ -50,7 +59,7 @@ img{
     top: 7px;
 
 }
-.lineRight{
+.button__next--line--one{
     background-color: rgb(163, 11, 11);
     transform: rotate(45deg);
     height: 4px;
@@ -59,7 +68,7 @@ img{
     bottom: 19px;
     
 }
-.lineRightTwo{
+.button__next--line--two{
     background-color: rgb(163, 11, 11);
     transform: rotate(-45deg);
     height: 4px;

@@ -16,13 +16,17 @@ let imageArray= [
     'horror4.jpeg'
 ]
 
-
 function getPrev() {
     counter--;
     if(counter < 0){
         counter = 2;
     }
-    image.src=`assets/${imageArray[counter]}`;
+    image.classList = 'effectPrev';
+    setTimeout( () => {
+        image.src=`assets/${imageArray[counter]}`;
+        image.classList = 'reset';
+    }, 200);
+    
 }
 
 function getNext() {
@@ -30,5 +34,8 @@ function getNext() {
     if(counter > 2){
         counter = 0;
     }
-    image.src=`assets/${imageArray[counter]}`;
-}
+    image.classList = 'effectNext';
+    setTimeout( () => {
+        image.src=`assets/${imageArray[counter]}`;
+        image.classList = 'reset';
+    }, 200);}

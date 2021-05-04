@@ -9,7 +9,7 @@ img{
         transform: translateX(0);
       }
       100% {
-        transform: translateX(100px)rotate(10deg);
+        transform: translateX(300px)rotate(10deg);
       }
 }
 @keyframes prev {
@@ -17,7 +17,7 @@ img{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100px) rotate(-10deg);
+      transform: translateX(-300px) rotate(-10deg);
     }
 }
 .effectPrev{
@@ -31,7 +31,7 @@ img{
     animation: next 0.5s infinite;
 }
 .reset{
-    transition: 0.4s ease all;
+    transition: 0.1s ease all;
     opacity: 1;
 }
 .main__container{

@@ -6,32 +6,32 @@ img{
 }
 @keyframes next {
     0% {
-      transform: rotateY(0);
-    }
-    100% {
-      transform: rotateY(180deg);
-    }
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100px)rotate(10deg);
+      }
 }
 @keyframes prev {
     0% {
-      transform: rotateY(0);
+      transform: translateX(0);
     }
     100% {
-      transform: rotateY(-180deg);
+      transform: translateX(-100px) rotate(-10deg);
     }
 }
 .effectPrev{
-    transition: 0.7s ease all;
+    transition: 0.5s ease all;
     opacity: 0.1;
-    animation: next 0.5s infinite;
+    animation: prev 0.5s infinite;
 }
 .effectNext{
-    transition: 0.7s ease all;
+    transition: 0.5s ease all;
     opacity: 0.1;
     animation: next 0.5s infinite;
 }
 .reset{
-    transition: 2s ease all;
+    transition: 0.4s ease all;
     opacity: 1;
 }
 .main__container{

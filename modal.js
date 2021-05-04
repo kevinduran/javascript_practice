@@ -7,12 +7,17 @@ let outputBottom = document.querySelector('.outputBottom');
 
 
 modalBtn.addEventListener('click', ()=>{
+    modal.classList.remove('hide')
     modal.classList.add('active');
     getMovie();
 });
 
 close.addEventListener('click', ()=>{
     modal.classList.remove('active');
+    outputTop.innerHTML = `<h2 class="outputTitle"></h2><p class="outputDesc"></p>`;
+    outputBottom.innerHTML= '';
+            
+
 });
 
 function getMovie(){

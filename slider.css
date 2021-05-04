@@ -21,17 +21,17 @@ img{
     }
 }
 .effectPrev{
-    transition: 0.9s ease all;
+    transition: 0.7s ease all;
     opacity: 0.1;
     animation: next 0.5s infinite;
 }
 .effectNext{
-    transition: 0.9s ease all;
+    transition: 0.7s ease all;
     opacity: 0.1;
     animation: next 0.5s infinite;
 }
 .reset{
-    transition: 3s ease all;
+    transition: 2s ease all;
     opacity: 1;
 }
 .main__container{
@@ -42,6 +42,7 @@ img{
     position: relative;
     display: flex;
     align-items: center;
+    min-width: 100px;
 }
 .carousel__container{
     position: relative;
@@ -53,7 +54,6 @@ img{
     cursor: pointer;
     background-color: transparent;
     border: none;
-    border: 1px solid red;
     height: 90px;
     padding-top: 20px;
     margin: 0 10px;

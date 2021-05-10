@@ -1,3 +1,6 @@
+*{
+    transition: 1s ease all;
+}
 body{
     background-color: rgb(16 15 15);
     display: flex;
@@ -10,19 +13,55 @@ body{
 h1{
     font-family: 'Creepster', cursive;
     position: relative;
-    top: -100px;
     color: rgb(233, 208, 208);
     font-size: 6em;
     letter-spacing: 16px;
+    position: relative;
+    top: 1px;
+    bottom: 55px;
 
 }
-.pokedex_container{
-    width: 700px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .pokedex{
-    max-width: 666px;
+    max-width: 687px;
+    top: 25px;
+    position: relative;
+}
+
+.pokedex--start{
+    position: relative;
+    height: 67px;
+    cursor: pointer;
+    width: 61px;
+    border-radius: 50%;
+    top: -454px;
+    left: -266px;
+    background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.671), rgb(255, 0, 0));
+    font-size: 2.3em;
+    z-index: 1;
+}
+
+.pokedex--start:hover{
+    background-image: linear-gradient(to bottom, rgba(185, 1, 1, 0.671), rgb(255, 0, 0));
+
+}
+
+.pokemon--image {
+    position: relative;
+    height: 147px;
+    width: 216px;
+    top: -387px;
+    left: -163px;
+    border-radius: 5%;
+    background-color: #3c3838;
+    z-index: 1;
+}
+.pokemon--desc {
+    position: relative;
+    height: 92px;
+    width: 222px;
+    border-radius: 5%;
+    top: -522px;
+    left: 182px;
+    background-color: #0d2916;
+    z-index: 2;
 }

@@ -1,5 +1,28 @@
-.output{
-    height: 500px;
-    width: 300px;
-    border: 1px solid red;
+body{
+    background-color: rgb(16 15 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+h1{
+    font-family: 'Creepster', cursive;
+    position: relative;
+    top: -100px;
+    color: rgb(233, 208, 208);
+    font-size: 6em;
+    letter-spacing: 16px;
+
+}
+.pokedex_container{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex{
+    max-width: 666px;
 }

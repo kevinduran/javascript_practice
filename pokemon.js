@@ -29,4 +29,3 @@ pokedexStart.addEventListener('click',()=>{
 
 
 //to get a description, we need to append the resource_uri to the end of our fetch url
-// https://pokeapi.co/api/v2/type/ghost  THIS WILL GET ALL GHOST POKEMON

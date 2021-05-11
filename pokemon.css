@@ -17,14 +17,15 @@ body{
     font-size: 6em;
     letter-spacing: 16px;
     position: relative;
-    top: 1px;
-    bottom: 55px;
+   text-align: center;
 }
 
 .pokedex{
     max-width: 687px;
     top: 25px;
     position: relative;
+    overflow: hidden;
+    
 }
 
 .pokedex--start{
@@ -33,8 +34,8 @@ body{
     cursor: pointer;
     width: 59px;
     border-radius: 50%;
-    top: -452px;
-    left: -266px;
+    top: -11.2em;
+    left: -17.5em;
     background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.671), rgb(255, 0, 0));
     font-size: 2.3em;
     z-index: 1;
@@ -49,8 +50,8 @@ body{
     position: relative;
     height: 147px;
     width: 216px;
-    top: -383px;
-    left: -163px;
+    top: -21.4em;
+    left: 4em;
     border-radius: 5%;
     background-color: #171414;
     z-index: 1;
@@ -72,15 +73,15 @@ body{
     font-family: 'VT323', monospace;
     font-size: 30px;
     position: relative;
-    top: -14px;
+    top: -15px;
 }
 .pokemon--desc {
     position: relative;
     height: 92px;
     width: 222px;
     border-radius: 5%;
-    top: -532px;
-    left: 182px;
+    top: -31em;
+    left: 26em;
     background-color: #0d2916;
     border: 4px solid #0fb400;
     z-index: 2;

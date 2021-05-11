@@ -33,12 +33,12 @@ body{
     cursor: pointer;
     width: 59px;
     border-radius: 50%;
-    top: -454px;
+    top: -452px;
     left: -266px;
     background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.671), rgb(255, 0, 0));
     font-size: 2.3em;
     z-index: 1;
-    order: 2px solid #100f0f;
+    border: 2px solid #100f0f;
 }
 
 .pokedex--start:hover{

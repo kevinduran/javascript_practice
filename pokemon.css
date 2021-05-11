@@ -18,14 +18,13 @@ body{
     letter-spacing: 16px;
     position: relative;
    text-align: center;
+   top: 40px;
 }
 
 .pokedex{
     max-width: 687px;
     top: 25px;
-    position: relative;
-    overflow: hidden;
-    
+    position: relative;    
 }
 
 .pokedex--start{

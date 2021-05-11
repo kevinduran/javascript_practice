@@ -10,10 +10,10 @@ body{
     flex-direction: column;
     position: relative;
 }
-h1{
+.main--title{
     font-family: 'Creepster', cursive;
     position: relative;
-    color: rgb(140 7 42/ 80%);
+    color: rgb(211 10 64/ 80%);
     font-size: 6em;
     letter-spacing: 16px;
     position: relative;
@@ -55,7 +55,22 @@ h1{
     background-color: #171414;
     z-index: 1;
     border: 5px solid #0fb400;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pokemon--sprite{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+}
+.pokemon--sprite--name{
+    color: rgb(0, 184, 76);
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
 }
 .pokemon--desc {
     position: relative;

@@ -8,7 +8,7 @@ function getRandomInt(max) {
 
 
 pokedexStart.addEventListener('click',()=>{
-    getRandomInt(76);
+    console.log(getRandomInt(76));
     fetch(`https://pokeapi.co/api/v2/type/8/`)
     .then(res => res.json())
     .then(response=>{
@@ -18,9 +18,19 @@ pokedexStart.addEventListener('click',()=>{
                  pokemonImage.innerHTML= `
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />
                     <h1 class="pokemon--sprite--name">${response.forms[0].name}</h1>
-                    `
+                    `   
         })
-        
+        fetch(`https://pokeapi.co/api/v2/pokemon-species/${getRandomInt(76)}/`)
+        .then(response=>response.json())
+        .then(res=>
+            fetch(`https://pokeapi.co/api/v2/pokemon-species/${getRandomInt(76)}/`)
+                .then(response=>response.json())
+                .then(res=>
+                pokemonDesc.innerHTML= `
+                        <p class="pokemon--desc--text">${res.flavor_text_entries[1].flavor_text}</p>
+                    `
+                )      
+        )        
     })
 });
 

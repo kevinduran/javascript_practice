@@ -11,8 +11,8 @@ function getRandomInt(max){
 //on  button click
 pokedexStart.addEventListener('click',()=>{
 
-    //we create a random number 
-    var random_poke = getRandomInt(76)
+    //we create a random number < 72  (total number of ghost pokemon) 
+    var random_poke = getRandomInt(72)
    //we need to start with a list of all ghost pokemon
     //fetch every ghost-type pokemon list from this url
     fetch(`https://pokeapi.co/api/v2/type/8/`)
@@ -32,7 +32,7 @@ pokedexStart.addEventListener('click',()=>{
                     .then(res => res.json())
                     .then(response =>{ 
                         //insert desc data into <p>
-                        //ERROR need to make sure our flavor text entries are all english
+                        //ERROR - need to make sure our flavor text entries are all english
                         pokemonDesc.innerHTML = `
                             <p class="pokemon--desc--text">${response.flavor_text_entries[3].flavor_text}</p>
                         `                    
@@ -41,6 +41,7 @@ pokedexStart.addEventListener('click',()=>{
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />
                     <h1 class="pokemon--sprite--name">${response.forms[0].name}</h1>
                     `
+                    //ERROR - h1 name sometimes returns a '-lorem'. erase it 
             })            
     })
 })

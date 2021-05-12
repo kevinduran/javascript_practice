@@ -38,6 +38,7 @@ pokedexStart.addEventListener('click',()=>{
                         var flavor_text_array = response.flavor_text_entries;
                         //we will loop through the array of desc. 
                         var desc_array=[];
+
                         flavor_text_array.forEach(element=>{
                             //check to see if language is english
                             if(element.language.name == 'en' && desc_array.length == 0){   
@@ -45,13 +46,15 @@ pokedexStart.addEventListener('click',()=>{
                                 desc_array.push(element.flavor_text)
                             }
                         });  
+                        var random_desc =getRandomInt(desc_array.length - 1)
+
                         pokemonDesc.innerHTML = `
-                            <p class="pokemon--desc--text">${desc_array[0]}</p>
+                            <p class="pokemon--desc--text">${desc_array[random_desc]}</p>
                         `        
                     })
                 pokemonImage.innerHTML= `
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />
-                    <h1 class="pokemon--sprite--name">${response.forms[0].name}</h1>
+                    <h1 class="pokemon--sprite--name">${response.forms[0].name.split('-')[0]}</h1>
                     `
                     //ERROR - h1 name sometimes returns a '-lorem'. erase it 
             })            

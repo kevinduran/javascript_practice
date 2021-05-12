@@ -13,6 +13,7 @@ pokedexStart.addEventListener('click',()=>{
 
     //we create a random number < 72  (total number of ghost pokemon) 
     var random_poke = getRandomInt(72)
+    console.log(random_poke);
    //we need to start with a list of all ghost pokemon
     //fetch every ghost-type pokemon list from this url
     fetch(`https://pokeapi.co/api/v2/type/8/`)
@@ -34,7 +35,7 @@ pokedexStart.addEventListener('click',()=>{
                         //insert desc data into <p>
                         //ERROR - need to make sure our flavor text entries are all english
                         pokemonDesc.innerHTML = `
-                            <p class="pokemon--desc--text">${response.flavor_text_entries[3].flavor_text}</p>
+                            <p class="pokemon--desc--text">${response.flavor_text_entries[5].flavor_text}</p>
                         `                    
                     })
                 pokemonImage.innerHTML= `

@@ -8,12 +8,15 @@ function getRandomInt(max){
     return Math.floor(Math.random()*max);
 }
 
+
+
+
+
 //on  button click
 pokedexStart.addEventListener('click',()=>{
 
     //we create a random number < 72  (total number of ghost pokemon) 
-    var random_poke = getRandomInt(72)
-    console.log(random_poke);
+    var random_poke = getRandomInt(71)
    //we need to start with a list of all ghost pokemon
     //fetch every ghost-type pokemon list from this url
     fetch(`https://pokeapi.co/api/v2/type/8/`)
@@ -32,11 +35,15 @@ pokedexStart.addEventListener('click',()=>{
                 fetch(`${response.species.url}`)
                     .then(res => res.json())
                     .then(response =>{ 
-                        //insert desc data into <p>
-                        //ERROR - need to make sure our flavor text entries are all english
-                        pokemonDesc.innerHTML = `
-                            <p class="pokemon--desc--text">${response.flavor_text_entries[5].flavor_text}</p>
-                        `                    
+                        var flavor_text_array = response.flavor_text_entries;
+                        //we will loop through the array of desc. 
+                        flavor_text_array.forEach(element=>{
+                            //if the language is english then output to DOM
+                            if(element.language.name == 'en'){
+                                //now you have all english desc...
+                                console.log(element.flavor_text);
+                            }
+                        });           
                     })
                 pokemonImage.innerHTML= `
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />

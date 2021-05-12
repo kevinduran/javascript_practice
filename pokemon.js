@@ -37,13 +37,17 @@ pokedexStart.addEventListener('click',()=>{
                     .then(response =>{ 
                         var flavor_text_array = response.flavor_text_entries;
                         //we will loop through the array of desc. 
+                        var desc_array=[];
                         flavor_text_array.forEach(element=>{
-                            //if the language is english then output to DOM
-                            if(element.language.name == 'en'){
+                            //check to see if language is english
+                            if(element.language.name == 'en' && desc_array.length == 0){   
                                 //now you have all english desc...
-                                console.log(element.flavor_text);
+                                desc_array.push(element.flavor_text)
                             }
-                        });           
+                        });  
+                        pokemonDesc.innerHTML = `
+                            <p class="pokemon--desc--text">${desc_array[0]}</p>
+                        `        
                     })
                 pokemonImage.innerHTML= `
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />

@@ -51,6 +51,7 @@ pokedexStart.addEventListener('click',()=>{
                         pokemonDesc.innerHTML = `
                             <p class="pokemon--desc--text">${desc_array[random_desc]}</p>
                         `        
+                        console.log(response)   
                     })
                 pokemonImage.innerHTML= `
                     <img class="pokemon--sprite" src="${response.sprites.front_default}" />

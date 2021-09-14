@@ -10,3 +10,4 @@ dark.addEventListener('click',function(){
         document.querySelector('h2').style.color = "rgb(231, 43, 43)";
     }
 })
+

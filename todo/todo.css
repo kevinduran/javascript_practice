@@ -1,3 +1,47 @@
 body{
     background-color: rgb(31, 29, 29);
+    font-family: 'Space Mono', monospace;
+}
+button{
+    font-family: 'Space Mono', monospace;
+    background-color: transparent;
+    color: rgb(9, 151, 9);
+    border: 1px solid rgb(9, 151, 9);
+    cursor: pointer;
+    font-size: 1.1em;
+}
+button:hover{
+    background-color: rgba(8, 189, 8, 0.2);
+}
+input{
+    background-color: transparent;
+    border: 1px solid rgb(9, 151, 9);
+    color: rgb(9, 151, 9);
+    font-size: 1.2em;
+    font-family: 'Space Mono', monospace;
+}
+input:focus{
+    outline: rgb(0, 128, 43);
+}
+
+
+
+
+.todo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5em;
+}
+.todo__container--title{
+    color: rgb(9, 151, 9);
+}
+.todo__container--input{
+    padding-bottom: 2em;
+}
+.todo__container--output{
+    min-height: 500px;
+    width: 400px;
+    border: 3px solid rgb(9, 151, 9);
 }

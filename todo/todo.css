@@ -21,7 +21,7 @@ input{
     font-family: 'Space Mono', monospace;
 }
 input:focus{
-    outline: rgb(0, 128, 43);
+    outline: rgb(0, 128, 42);
 }
 
 

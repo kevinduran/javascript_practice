@@ -5,31 +5,37 @@ const output = document.querySelector('.todo__container--output');
 
 
 const getInputValue = () => {
-    console.log(input.value);
+    console.log('getInputValue: '+ input.value);
     return input.value
 }
-const deleteItem = () => {
-    console.log('test')
+
+
+const createItem = () => {
+
+    var outputItem = document.createElement('div')
+    var outputItemDesc = document.createElement('p');
+    var outputItemDelete = document.createElement('button');
+
+    outputItem.className= 'output-item';
+    outputItemDesc.className = 'item-desc';
+    outputItemDelete.className='item-x';
+
+    outputItemDesc.innerText= getInputValue();
+    outputItemDelete.innerText = 'x'
+
+    outputItem.appendChild(outputItemDesc);
+    outputItem.appendChild(outputItemDelete);
+    output.appendChild(outputItem);
+
+    outputItemDelete.addEventListener('click', () =>{
+        outputItem.remove();
+    })
 }
 
 const produceOutputValue = () => {
-    var outputItem = document.createElement('div')
-    outputItem.className= 'output-item';
-    var para = document.createElement('P');
-    para.className = 'item-desc';
-    para.innerText= getInputValue();
-    var ex = document.createElement('button');
-    ex.className='item-x';
-    ex.innerText = 'x'
-    outputItem.appendChild(para);
-    outputItem.appendChild(ex);
-    output.appendChild(outputItem);
-    console.log(output);  
+    createItem() ; 
     input.value = '';
-    deleteItem();
 }
-
-
 
 add.addEventListener('click', produceOutputValue);
 

@@ -19,9 +19,14 @@ input{
     color: rgb(9, 151, 9);
     font-size: 1.2em;
     font-family: 'Space Mono', monospace;
+    
 }
 input:focus{
     outline: rgb(0, 128, 42);
+}
+input:hover{
+    transition: 0.5s ease all;
+    background-color: rgba(4, 139, 34,0.1);
 }
 
 

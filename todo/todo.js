@@ -27,9 +27,7 @@ const createItem = () => {
     outputItem.appendChild(outputItemDelete);
     output.appendChild(outputItem);
 
-    outputItemDelete.addEventListener('click', () =>{
-        outputItem.remove();
-    })
+    outputItemDelete.addEventListener('click', ()=>outputItem.remove())
 }
 
 const produceOutputValue = () => {
